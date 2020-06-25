@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/homeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Welcome to Purana Quiz home page.Your ultimate destination for Puranas.Click below or browse from the menu to start quizzing!"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="30sp"
+        android:padding="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ramayana_btn"
+        android:text="Ramayana QUiz"
+        android:tooltipText="Click for Ramayana Quiz"
+        android:icon="@drawable/ic_ramyana_quiz_img"
+        android:layout_alignLeft="@+id/homeText"
+        android:layout_below="@+id/homeText"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/mahabharatha_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/ramayana_btn"
+        android:layout_toRightOf="@+id/ramayana_btn"
+        android:text="Mahabharartha Quiz"
+        android:icon="@drawable/ic_mahabharatha_quiz"
+        android:tooltipText="CLick for Mahabharatha Quiz" />
+
+
+</RelativeLayout>

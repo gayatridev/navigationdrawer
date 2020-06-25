@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    android:padding="16dp"
+    tools:context="com.gayatri.navigationdrawer.QuizActivity">
+
+
+    <TextView
+        android:id="@+id/ramayana_text_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score:0"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:freezesText="true"/>
+    <TextView
+        android:id="@+id/ramayana_qstn_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1/x"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:layout_below="@+id/ramayana_text_score"
+        android:freezesText="true"/>
+
+
+    <TextView
+        android:id="@+id/text_view_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Here there will be a question"
+        android:textSize="20sp"
+        android:layout_above="@id/ramayan_radion_grp"
+        android:textColor="@color/cardview_dark_background"
+        android:freezesText="true"/>
+    <RadioGroup
+        android:id="@+id/ramayan_radion_grp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radion_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:freezesText="true"/>
+    <RadioButton
+        android:id="@+id/radion_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Option 2"
+        android:freezesText="true"/>
+    <RadioButton
+        android:id="@+id/radion_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Option 3"
+        android:freezesText="true"/>
+    <RadioButton
+        android:id="@+id/radion_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Option 4"
+        android:freezesText="true"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="submit"
+        android:layout_below="@+id/ramayan_radion_grp"
+        android:layout_marginTop="16dp"
+        android:freezesText="true"/>
+
+
+</RelativeLayout>
+
